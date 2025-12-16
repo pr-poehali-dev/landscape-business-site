@@ -98,8 +98,23 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-family: "Open Sans", sans-serif;
+    background-image: url("https://cdn.poehali.dev/projects/81e04b30-ac19-4347-8fbb-a9b3a045e4a8/files/13a5b6a1-9935-4ea5-b56a-aacb8f5e4663.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: -1;
   }
 
   h1,
